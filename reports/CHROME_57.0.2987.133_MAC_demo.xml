@@ -5,9 +5,11 @@
 
   <testsuite name="demo"
     errors="0" failures="1" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="29.16" timestamp="Mon, 24 Apr 2017 00:57:08 GMT">
+    tests="1" time="3.742" timestamp="Mon, 24 Apr 2017 09:46:47 GMT">
   
-    <testcase name="Bilibili Live Login Test" classname="demo" time="29.16" assertions="1">  <failure message="Expected element &lt;body&gt; to be present in 3000ms - element was not found">    at Object.Bilibili Live Login Test (/Users/gemicat/workspace/node/testToolkit/tests/demo.js:13:19)
+    <testcase name="Bilibili Live Login Test" classname="demo" time="3.742" assertions="2">
+
+      <failure message="Expected element &lt;.top-nav-login-btn.last&gt; to be visible - element was not found">    at Object.Bilibili Live Login Test (/Users/gemicat/workspace/node/testToolkit/tests/demo.js:14:19)
     at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure>
 
     
