@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./start.js",
+    "selenium-setup": "node ./build/selenium-setup.js",
+    "selenium-start": "node ./build/selenium-start.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Gemicat/testToolkit/issues"
   },
-  "homepage": "https://github.com/Gemicat/testToolkit#readme"
+  "homepage": "https://github.com/Gemicat/testToolkit#readme",
+  "devDependencies": {
+    "nightwatch": "0.9.14",
+    "selenium-standalone": "6.2.0"
+  }
 }
