@@ -1,34 +1,48 @@
-17:46:46.968 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
-17:46:46.969 INFO - Launching a standalone Selenium Server
-2017-04-24 17:46:46.997:INFO::main: Logging initialized @304ms to org.seleniumhq.jetty9.util.log.StdErrLog
-17:46:47.063 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+11:01:42.002 INFO - Selenium build info: version: '3.3.1', revision: '5234b32'
+11:01:42.002 INFO - Launching a standalone Selenium Server
+2017-05-16 11:01:42.033:INFO::main: Logging initialized @407ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:01:42.102 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
  registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
-17:46:47.063 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+11:01:42.102 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
  registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
-17:46:47.064 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-17:46:47.064 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+11:01:42.103 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:01:42.103 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
 Unable to create new instances on this machine.
-17:46:47.064 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-17:46:47.064 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-2017-04-24 17:46:47.125:INFO:osjs.Server:main: jetty-9.2.20.v20161216
-2017-04-24 17:46:47.181:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@5442a311{/,null,AVAILABLE}
-2017-04-24 17:46:47.220:INFO:osjs.AbstractConnector:main: Started ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
-2017-04-24 17:46:47.221:INFO:osjs.Server:main: Started @528ms
-17:46:47.221 INFO - Selenium Server is up and running
-17:46:47.463 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
-17:46:47.493 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-17:46:47.510 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b) on port 46994
+11:01:42.105 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:01:42.106 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+2017-05-16 11:01:42.170:INFO:osjs.Server:main: jetty-9.2.20.v20161216
+2017-05-16 11:01:42.229:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@5442a311{/,null,AVAILABLE}
+2017-05-16 11:01:42.292:INFO:osjs.AbstractConnector:main: Started ServerConnector@cb644e{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-05-16 11:01:42.298:INFO:osjs.Server:main: Started @672ms
+11:01:42.298 INFO - Selenium Server is up and running
+11:01:42.568 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+11:01:42.593 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+11:01:42.610 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b) on port 21328
 Only local connections are allowed.
-17:46:48.963 INFO - Detected dialect: OSS
-17:46:48.993 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-17:46:49.015 INFO - Executing: [get: http://live.bilibili.com])
-17:46:50.227 INFO - Done: [get: http://live.bilibili.com]
-17:46:50.236 INFO - Executing: [maximise window])
-17:46:50.816 INFO - Done: [maximise window]
-17:46:50.829 INFO - Executing: [find elements: By.cssSelector: body])
-17:46:50.882 INFO - Done: [find elements: By.cssSelector: body]
-17:46:50.897 INFO - Executing: [find elements: By.cssSelector: .top-nav-login-btn.last])
-17:46:50.928 INFO - Done: [find elements: By.cssSelector: .top-nav-login-btn.last]
-17:46:50.937 INFO - Executing: [delete session: 3947f560-9bfe-4174-bb19-fe76b96d0659])
-17:46:51.028 INFO - Done: [delete session: 3947f560-9bfe-4174-bb19-fe76b96d0659]
+11:01:45.171 INFO - Detected dialect: OSS
+11:01:45.204 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Demo, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+11:01:45.232 INFO - Executing: [get: http://bing.com])
+11:01:46.346 INFO - Done: [get: http://bing.com]
+11:01:46.357 INFO - Executing: [maximise window])
+11:01:46.637 INFO - Done: [maximise window]
+11:01:46.657 INFO - Executing: [find elements: By.cssSelector: body])
+11:01:48.218 INFO - Done: [find elements: By.cssSelector: body]
+11:01:48.229 INFO - Executing: [find elements: By.cssSelector: #sb_form_q])
+11:01:48.268 INFO - Done: [find elements: By.cssSelector: #sb_form_q]
+11:01:48.280 INFO - Executing: [is displayed: 1 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_q]])
+11:01:48.312 INFO - Done: [is displayed: 1 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_q]]
+11:01:50.328 INFO - Executing: [find element: By.cssSelector: #sb_form_q])
+11:01:50.357 INFO - Done: [find element: By.cssSelector: #sb_form_q]
+11:01:50.363 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_q], [w, h, a, t,  , i, s,  , m, i, c, r, o, s, o, f, t]])
+11:01:50.552 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_q], [w, h, a, t,  , i, s,  , m, i, c, r, o, s, o, f, t]]
+11:01:50.558 INFO - Executing: [find element: By.cssSelector: #sb_form_go])
+11:01:50.584 INFO - Done: [find element: By.cssSelector: #sb_form_go]
+11:01:50.590 INFO - Executing: [click: 2 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_go]])
+11:01:51.387 INFO - Done: [click: 2 [[ChromeDriver: chrome on MAC (da85addfe39c79d44301f29b88b7e8bb)] -> css selector: #sb_form_go]]
+11:01:53.396 INFO - Executing: [find elements: By.cssSelector: body])
+11:01:53.407 INFO - Done: [find elements: By.cssSelector: body]
+11:01:53.412 INFO - Executing: [take screenshot])
+11:01:54.591 INFO - Done: [take screenshot]
+11:01:54.705 INFO - Executing: [delete session: d28f7ec1-51ce-49c6-a5d3-8b198248c7a7])
+11:01:54.953 INFO - Done: [delete session: d28f7ec1-51ce-49c6-a5d3-8b198248c7a7]

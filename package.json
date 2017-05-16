@@ -23,11 +23,14 @@
     "child_process": "1.0.2",
     "koa": "2.2.0",
     "koa-bodyparser": "4.2.0",
+    "koa-convert": "1.2.0",
     "koa-router": "7.1.1",
+    "koa-static": "3.0.0",
     "mime": "1.3.4",
     "mz": "2.6.0",
     "nightwatch": "0.9.14",
     "nunjucks": "3.0.0",
-    "selenium-standalone": "6.2.0"
+    "selenium-standalone": "6.2.0",
+    "socket.io": "2.0.1"
   }
 }

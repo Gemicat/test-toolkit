@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="demo"
-    errors="0" failures="1" hostname="" id="" package="demo" skipped="0"
-    tests="1" time="3.742" timestamp="Mon, 24 Apr 2017 09:46:47 GMT">
+    errors="0" failures="0" hostname="" id="" package="demo" skipped="0"
+    tests="1" time="10.70" timestamp="Tue, 16 May 2017 02:31:18 GMT">
   
-    <testcase name="Bilibili Live Login Test" classname="demo" time="3.742" assertions="2">
+    <testcase name="Find the answer." classname="demo" time="10.70" assertions="3">
 
-      <failure message="Expected element &lt;.top-nav-login-btn.last&gt; to be visible - element was not found">    at Object.Bilibili Live Login Test (/Users/gemicat/workspace/node/testToolkit/tests/demo.js:14:19)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure>
+    
+
+    
 
     
     </testcase>

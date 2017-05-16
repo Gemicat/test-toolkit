@@ -1,14 +1,29 @@
 const Koa = require('koa');
 
+const path = require('path');
+
 const bodyParser = require('koa-bodyparser');
 
 const controller = require('./controller');
 
 const templating = require('./templating');
 
+const convert = require('koa-convert')
+
+const static = require('koa-static')
+
 const app = new Koa();
 
+var io = require('socket.io').listen(app);
+
 const isProduction = process.env.NODE_ENV === 'production';
+
+io.sockets.on('connection', function (socket) {
+    socket.emit('news', { hello: 'world' });
+    socket.on('my other event', function (data) {
+        console.log(data);
+    });
+});
 
 // log request URL:
 app.use(async (ctx, next) => {
@@ -21,11 +36,9 @@ app.use(async (ctx, next) => {
     ctx.response.set('X-Response-Time', `${execTime}ms`);
 });
 
-// static file support:
-if (! isProduction) {
-    let staticFiles = require('./static-files');
-    app.use(staticFiles('/static/', __dirname + '/static'));
-}
+app.use(convert(static(
+    path.join(__dirname, '/static')
+)));
 
 // parse request body:
 app.use(bodyParser());

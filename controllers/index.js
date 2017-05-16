@@ -1,14 +1,15 @@
-const exec = require('child_process').execSync;
+const exec = require('child_process').exec;
 
 const getCode = async (shell) => {
-    let data = '';
-    return exec(shell, function(err, stdout, stderr) {
-        if (err) {
-            console.log('命令运行失败：' + err);
-        } else {
-            console.log(stderr);
-            data = JSON.stringify(stdout);
-        }
+    let child = exec('node ./start.js');
+    child.stdout.on('data', function(data) {
+        console.log('stdout: ' + data);
+    });
+    child.stderr.on('data', function(data) {
+        console.log('stdout: ' + data);
+    });
+    child.on('close', function(code) {
+        console.log('closing code: ' + code);
     });
 }
 
@@ -16,14 +17,8 @@ module.exports = {
     'GET /*': async (ctx, next) => {
         let shell = (ctx.query.code || 'ls -l').trim();
         let data = '';
-        try{
-            data = await getCode(shell);
-        } catch(e) {
-            data = 'filed: \r\n' + e;
-        }
-        ctx.render('index.html', {
-            code: data,
-            value: shell
-        });
+
+        // data = await getCode(shell);
+        ctx.render('index.html', {});
     }
 }
